@@ -2,25 +2,10 @@ Ext.define("AM.view.user.List", {
     extend: "Ext.grid.Panel",
     alias: "widget.userlist",
 
+    store: "Users",
+
     title: "All Users",
     initComponent: function(){
-        this.store = {
-            fields: ["id", "name", "email", "phone"],
-            data: [
-                {
-                    id: 1,
-                    name: "Ed",
-                    email: "woden0415@163.com",
-                    phone: "15102127423"
-                },
-                {
-                    id: 2,
-                    name: "Tommy",
-                    email: "562550212@qq.com",
-                    phone: "151021127422"
-                }
-            ]
-        };
         this.columns = [
             {
                 header: "Id",

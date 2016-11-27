@@ -2,8 +2,16 @@ Ext.define("AM.controller.Users", {
     extend: "Ext.app.Controller",
     
     views: [
-        "user.List",
+        "user.List", 
         "user.Edit"
+    ],
+
+    models: [
+        "User"
+    ],
+    
+    stores: [
+        "Users"
     ],
 
     init: function(){
@@ -13,6 +21,9 @@ Ext.define("AM.controller.Users", {
             },
             "userlist": {
                 itemdblclick: this.editUser
+            },
+            "useredit button[action=save]": {
+                click: this.updateUser
             }
         });
     },
@@ -21,6 +32,18 @@ Ext.define("AM.controller.Users", {
         var view = Ext.widget("useredit");
         view.down("form").loadRecord(record);
     },
+
+    updateUser: function(button){
+        // console.info("clicked the save button");
+        var win = button.up("window"),
+            form = win.down("form"),
+            record = form.getRecord(),
+            values = form.getValues();
+        record.set(values);
+        win.close();
+        this.getUsersStore().sync();
+    },
+
     onPanelRendered: function(){
         console.log("Initialized Users! This happens before the Application launch function is called!");
     }
