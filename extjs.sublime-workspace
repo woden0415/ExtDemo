@@ -733,8 +733,7 @@
 	},
 	"expanded_folders":
 	[
-		"/D/extjs_ws/ExtDemo",
-		"/D/extjs_ws/ExtDemo/extjs/src/window"
+		"/E/extjs_ws/ExtDemo"
 	],
 	"file_history":
 	[
@@ -1127,8 +1126,8 @@
 						"selection":
 						[
 							[
-								103,
-								103
+								222,
+								222
 							]
 						],
 						"settings":
@@ -1136,7 +1135,8 @@
 							"encoding_helper_encoding": "UTF-8",
 							"encoding_thread_running": true,
 							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
