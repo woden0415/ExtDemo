@@ -1,0 +1,21 @@
+{
+  "name": "ext_demo",
+  "version": "1.0.0",
+  "description": "```\r 别人笑我太疯癫，\r 我笑他人看不穿，\r 不见五陵豪杰墓，\r 无花无酒锄作田。\r ```",
+  "main": "app-alert.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woden0415/ExtDemo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woden0415/ExtDemo/issues"
+  },
+  "homepage": "https://github.com/woden0415/ExtDemo#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-watch": "^4.3.11"
+  }
+}
